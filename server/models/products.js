@@ -2,11 +2,11 @@ import mongoose from "mongoose";
 const Schema= mongoose.Schema
 
 const product=new Schema({
-    prductID:{
-        type:Number
-    },
-    productname:{
-        type:String
+    name: String,
+    image: String,
+    count:{
+        type: Number,
+        required: true
     }
 
     
