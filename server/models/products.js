@@ -43,6 +43,19 @@ const product=new Schema({
         min: 0,
         max: 1000
     },
+    isFeatured:{
+        type: Boolean,
+        default: false
+    },
+    rating:{
+        type:Number,
+        default: 10
+    },
+    numReviews:{
+        type: Number,
+        default:""
+    },
+
     date:{
         type: Date,
         default: Date.now
